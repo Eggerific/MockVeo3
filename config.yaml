@@ -1,0 +1,28 @@
+video:
+  output_resolution: [1920, 1080]
+  frame_rate: 30
+  default_duration: 5.0  # seconds
+  default_style: "cinematic"
+
+transitions:
+  default: "fade"
+  duration: 1.0  # seconds
+  available_types:
+    - fade
+    - dissolve
+    - cut
+    - wipe
+
+audio:
+  sample_rate: 44100
+  channels: 2
+  default_volume: 0.8
+
+output:
+  directory: "output"
+  temp_directory: "output/temp"
+  final_filename: "final_video.mp4"
+
+logging:
+  level: "INFO"
+  checkpoint_file: "output/generation_checkpoints.json" 
